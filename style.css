@@ -1,0 +1,146 @@
+/* Images created by: https://unsplash.com/@pawel_czerwinski */
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;700&display=swap');
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  background: #c9ced3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0;
+  font-family: 'Spartan', sans-serif;
+  font-size: 12px;
+  padding: 0;
+  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+  
+}
+
+.player-container{
+  height: auto;
+  width: 400px;
+  background-image: linear-gradient(to right, #868f96 0%, #596164 100%);
+  border-radius: 20px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  margin: 0 auto;
+}
+
+.img-container {
+  height: 300px;
+  width: 300px;
+  align-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 2rem auto;
+}
+.img-container img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: rgb(38, 57, 77) 0px 10px 15px -5px;
+  filter: blur(.5px);
+}
+
+
+h2 {
+  font-size: 25px;
+  text-align: center;
+  align-self: center;
+  margin: 0;
+}
+
+h3 {
+  font-size: 20px;
+  text-align: center;
+  align-self: center;
+  font-weight: 400;
+  /* margin: 5px 0 0; */
+}
+
+/* Progress */
+.progress-container {
+  background: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 40px 20px;
+  height: 4px;
+  width: 90%;
+}
+
+.progress {
+  background: #242323;
+  border-radius: 5px;
+  height: 100%;
+  /* change this to show progress */
+  width: 0%;
+  transition: width 0.1s linear;
+}
+
+.duration-wrapper {
+  position: relative;
+  top: -25px;
+  display: flex;
+  justify-content: space-between;
+  flex: 0;
+  width: 90%;
+  margin: 0 auto;
+
+}
+
+/* Controls */
+.player-controls {
+  margin: 1rem auto 1.5rem auto;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+  flex: 0;
+}
+
+.fas {
+  font-size: 2rem;
+  color: #cfd1db;
+  margin: 0 1rem;
+  cursor: pointer;
+  user-select: none;
+
+}
+.fas:hover{
+  filter: brightness(70%);
+}
+
+
+
+.main-button {
+  font-size: 40px;
+  position: relative;
+  top: 3px;
+}
+
+/* Media Query: iPhone (Vertical) */
+@media screen and (max-width: 376px) {
+
+  .player-container{
+    width: 95vw;
+  }
+  
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 15px;
+  }
+
+  .player-controls {
+    top: -10px;
+    left: 100px;
+  }
+}
